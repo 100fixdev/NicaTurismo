@@ -1,5 +1,21 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  box-sizing: border-box;
+}
+
+
+
+div,section,header,footer,nav,main,article,aside,h1,h2,h3,h4,h5,h6,p,a,ul,li,img,button {
+  box-sizing: border-box;
+}
+
 /* Navbar base */
 .navbar {
+  display: flex;
+  width: 100%;
   background-color: #78b5d3; /* azul */
   color: white;
   padding: 0.5rem 1rem;

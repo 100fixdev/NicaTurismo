@@ -4,12 +4,12 @@ import "../styles/Welcome.css";
 export default function Welcome() {
   return (
     <div className="welcome__container">
-      <div className="section__hero">
+      <section className="section__hero">
         <h1>Welcome to NicaTurismo</h1>
         <div className="container__hero">
           <img src="" alt="lugares de Nicaragua" />
         </div>
-      </div>
+      </section>
 
       <div className="section__description">
         <h2>Discover the Beauty of Nicaragua</h2>
