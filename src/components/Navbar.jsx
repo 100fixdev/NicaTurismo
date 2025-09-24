@@ -7,15 +7,15 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="nav-container">
-        <h1 className="logo">NicaTurismo</h1>
+        <div className="nav-container--logo"><h1 className="logo">NicaTurismo</h1></div>
 
         {/* Menú de escritorio */}
-        <ul className={`nav-links ${isOpen ? "open" : ""}`}>
+        <div className="nav-container--links"><ul className={`nav-links ${isOpen ? "open" : ""}`}>
           {/* <li><a href="#inicio">Inicio</a></li> */}
           <li><a href="#destinos">Iniciar</a></li>
           <li><a href="#contacto">Contacto</a></li>
           <li><a href="#tours">Acerca de</a></li>
-        </ul>
+        </ul></div>
 
         {/* Botón hamburguesa */}
         <button className="nav-toggle" onClick={() => setIsOpen(!isOpen)}>

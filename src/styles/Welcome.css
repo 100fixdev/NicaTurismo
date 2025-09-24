@@ -3,6 +3,12 @@
 }
 
 
+.section__hero{
+    height: 100dvh;
+    background: no-repeat url(/src/images/fondo-hero-islas.webp);
+    background-size: cover;
+}
+
 
 .section__Lugares__grid {
 display: grid;
