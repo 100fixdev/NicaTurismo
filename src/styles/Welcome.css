@@ -5,7 +5,7 @@
 
 .section__hero{
     height: 100dvh;
-    background: no-repeat url(/src/images/fondo-hero-islas.webp);
+    background: no-repeat url(/src/images/fondo-hero-4k.jpg);
     background-size: cover;
 }
 
