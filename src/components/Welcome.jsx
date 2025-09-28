@@ -12,11 +12,13 @@ export default function Welcome() {
       </section>
 
       <div className="section__description">
-        <h2>Discover the Beauty of Nicaragua</h2>
-        <p>
+        <div className="section__description--title">
+        <h2>Descubre la belleza de Nicaragua </h2></div>
+        <div className="section__description--text"><p>
           Viaja y descubre la rica cultura, impresionantes paisajes y vibrantes comunidades 
-          de Nicaragua con NicaTurismo. La plataforma perfecta para planificar y hacer tu proxima aventura una experiencia inolvidable.
+           con NicaTurismo. La plataforma perfecta para planificar y hacer tu proxima aventura una experiencia inolvidable.
         </p>
+        </div>
       </div>
 
       <section className="section__Lugares">
