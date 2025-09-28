@@ -1,7 +1,12 @@
 import React from "react";
 import "../styles/Welcome.css";
+import {useState} from "react";
 
 export default function Welcome() {
+
+  const [activeIndex, setActiveIndex] = useState(null);
+  const items = [1, 2, 3, 4, 5];
+
   return (
     <div className="welcome__container">
       <section className="section__hero">
@@ -67,11 +72,17 @@ export default function Welcome() {
         </div>
 
         <div className="container__Ofrecemos--images">
-          <div className="Ofrecemos__images--item">1</div>
-          <div className="Ofrecemos__images--item">2</div>
-          <div className="Ofrecemos__images--item">3</div>
-          <div className="Ofrecemos__images--item">4</div>
-          <div className="Ofrecemos__images--item">5</div>
+          {items.map((item, index) => (
+            <div
+              key={index}
+              className={`Ofrecemos__images--item ${
+                activeIndex === index ? "active" : ""
+              }`}
+              onMouseEnter={() => setActiveIndex(index)} // cuando paso el mouse, activo ese div
+            >
+              {item}
+            </div>
+          ))}
         </div>
       </section>
 

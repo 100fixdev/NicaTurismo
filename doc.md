@@ -15,3 +15,16 @@ import  "../styles/Footer.css";
 
 
 pnpm dev para correr en servidor local  http://localhost:5173/
+
+
+DEPENDENCIAS
+
+pnpm i framer-motion 
+
+Update available! 10.16.1 → 10.17.1.   │
+   │   Changelog: https://pnpm.io/v/10.17.1   │
+   │     To update, run: pnpm add -g pnpm
+
+
+------------------
+
