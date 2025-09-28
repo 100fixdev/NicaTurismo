@@ -56,13 +56,15 @@ export default function Welcome() {
       </section>
 
       <section className="section__Ofrecemos">
-        <h2>¿Qué nos diferencia de otras plataformas?</h2>
-        <p>
-          En NicaTurismo, nos dedicamos a ofrecerte las mejores experiencias
-          turísticas en Nicaragua. Desde tours personalizados hasta alojamiento
-          de calidad, estamos aquí para hacer de tu viaje una experiencia
-          inolvidable.
-        </p>
+        <div className="section__Ofrecemos--title">
+          <h2>¿Qué nos diferencia de otras plataformas?</h2>
+          <p>
+            En NicaTurismo, nos dedicamos a ofrecerte las mejores experiencias
+            turísticas en Nicaragua. Desde tours personalizados hasta
+            alojamiento de calidad, estamos aquí para hacer de tu viaje una
+            experiencia inolvidable.
+          </p>
+        </div>
 
         <div className="container__Ofrecemos--images">
           <div className="Ofrecemos__images--item">1</div>
