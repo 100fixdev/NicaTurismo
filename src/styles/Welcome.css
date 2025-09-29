@@ -9,6 +9,14 @@
     background-size: cover;
 }
 
+.section__hero h1{
+    font-size: 6rem;
+    color: white;
+    text-align: center;
+    padding-top: 40vh;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}   
+
 .section__description{
     display: flex;
     flex-direction: column;
@@ -18,7 +26,6 @@
     text-align: center;
     height: 120dvh; 
     width: 100%;
-    border: 1px solid black;
 }
 
 .section__description--title{
@@ -47,7 +54,6 @@
 .section__Lugares{
     height: 110dvh;
     width: 100%;
-    border: 3px dotted green;
     padding: 1.2rem;
 }
 
@@ -86,7 +92,6 @@
 
 .lugar1 {
     grid-area: 1 / 1 / 3 / 3;
-    border: 1px solid gainsboro;
     padding: 20px;
     display: flex;
     text-align: left;
@@ -144,7 +149,6 @@
 .section__Ofrecemos{
     height: 100dvh;
     width: 100%;
-    border: 3px dotted blue;
     padding: 1.2rem;
     display: flex;
     flex-direction: column;
@@ -179,7 +183,6 @@
   max-width: 1200px;
   justify-content: center;
   align-items: center;
-  border: 1px solid darkgray;
   overflow: hidden;
 }
 
@@ -199,7 +202,6 @@
   position: relative;
   color: white;
   font-size: 1.2rem;
-  border: 1px solid gainsboro;
   overflow: hidden;
 }
 
@@ -229,7 +231,6 @@
 .container__video{
     width: 100%;
     height: 100dvh;
-    border: 3px dotted red;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -246,7 +247,7 @@
 }
 
 .container__video span{
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #555;
     margin-bottom: 10px;
     margin-right: 8px;
@@ -255,7 +256,6 @@
 
 .video--button{
     margin-top: 2rem;
-    border: 1px solid black;
     height: 180px;
     display: flex;
     flex-direction: column;
@@ -266,7 +266,7 @@
 /* Estilos de boton*/
 
 .cssbuttons-io-button {
-  background: #a370f0;
+  background: #448531;
   color: white;
   font-family: inherit;
   padding: 0.35em;
@@ -278,7 +278,7 @@
   letter-spacing: 0.05em;
   display: flex;
   align-items: center;
-  box-shadow: inset 0 0 1.6em -0.6em #714da6;
+  box-shadow: inset 0 0 1.6em -0.6em #448531;
   overflow: hidden;
   position: relative;
   height: 2.8em;
@@ -296,7 +296,7 @@
   height: 2.2em;
   width: 2.2em;
   border-radius: 0.7em;
-  box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #448531;
   right: 0.3em;
   transition: all 0.3s;
 }
@@ -308,7 +308,7 @@
 .cssbuttons-io-button .icon svg {
   width: 1.1em;
   transition: transform 0.3s;
-  color: #7b52b9;
+  color: #448531;
 }
 
 .cssbuttons-io-button:hover .icon svg {

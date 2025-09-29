@@ -17,7 +17,7 @@ div,section,header,footer,nav,main,article,aside,h1,h2,h3,h4,h5,h6,p,a,ul,li,img
   display: flex;
   width: 100%;
   height: clamp(60px, 8vh, 80px); /* altura adaptable a diferentes dispositivos ;-) */
-  background-color: transparent; /* azul */
+  background-color: #448531; /* azul */
   color: #becabc;
   padding: 0.5rem 1rem;
   position: fixed;
