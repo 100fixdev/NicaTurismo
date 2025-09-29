@@ -2,16 +2,17 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Welcome from "./components/Welcome"; // Landing
 
 /* Páginas */
-import Welcome from "./pages/Welcome"; // tu Landing (ya existente)
 import Login from "./pages/Login";
-import Dashboard from "./pages/Dashboard.jsx/index.js";
+import Dashboard from "./pages/Dashboard"; // arreglado
 import Explore from "./pages/Explore";
 import ServiceDetail from "./pages/ServiceDetail";
 import Cart from "./pages/Cart";
-import MapPage from "./pages/MapPage.jsx";
+import MapPage from "./pages/MapPage";
 import Admin from "./pages/Admin";
+
 
 function App() {
   return (
