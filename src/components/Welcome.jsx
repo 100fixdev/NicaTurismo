@@ -71,39 +71,55 @@ export default function Welcome() {
           <h2>¿Qué nos diferencia de otras plataformas?</h2>
           <p>
             En NicasTour, nos dedicamos a ofrecerte las mejores experiencias
-            turísticas en Nicaragua. Desde alojamiento de calidad, hasta pago de entradas turisticas
-            estamos aquí para hacer de tu viaje una
-            experiencia inolvidable.  
+            turísticas en Nicaragua. Desde alojamiento de calidad, hasta pago de
+            entradas turisticas estamos aquí para hacer de tu viaje una
+            experiencia inolvidable.
           </p>
         </div>
 
         <div className="container__Ofrecemos--images">
-        {items.map((item, index) => (
-          <div
-            key={item.id}
-            className={`Ofrecemos__images--item ${activeIndex === index ? "active" : ""}`}
-            onMouseEnter={() => setActiveIndex(index)}
-            style={{ backgroundImage: `url(${item.img})` }}
-          >
-            <div className="Ofrecemos__overlay">
-              <span>{item.title}</span>
+          {items.map((item, index) => (
+            <div
+              key={item.id}
+              className={`Ofrecemos__images--item ${
+                activeIndex === index ? "active" : ""
+              }`}
+              onMouseEnter={() => setActiveIndex(index)}
+              style={{ backgroundImage: `url(${item.img})` }}
+            >
+              <div className="Ofrecemos__overlay">
+                <span>{item.title}</span>
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
       </section>
 
       <section className="section__video">
         <div className="container__video">
-          <div className="video--frase">
-            <p>
-              ¡Descubre los tesoros ocultos de Nicaragua! Planifica tu viaje
-              soñado ahora!.
-            </p>
-          </div>
+          <p>
+            ¡Descubre los tesoros ocultos de Nicaragua! Planifica tu viaje
+            soñado ahora!.
+          </p>
           <div className="video--button">
             <span>Reserva tu viaje ya</span>
-            <button>----</button>
+            <button class="cssbuttons-io-button">
+              Explora ya
+              <div class="icon">
+                <svg
+                  height="24"
+                  width="24"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M0 0h24v24H0z" fill="none"></path>
+                  <path
+                    d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </div>
+            </button>
           </div>
         </div>
       </section>
