@@ -18,14 +18,14 @@ div,section,header,footer,nav,main,article,aside,h1,h2,h3,h4,h5,h6,p,a,ul,li,img
   width: 100%;
   height: clamp(60px, 8vh, 80px); /* altura adaptable a diferentes dispositivos ;-) */
   background-color: transparent; /* azul */
-  color: rgb(38, 92, 31);
+  color: #becabc;
   padding: 0.5rem 1rem;
   position: fixed;
 }
 
 /* Contenedor flex */
 .nav-container {
-  border: 1px solid #ccc;
+  /*border: 1px solid #ccc;*/
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -34,7 +34,7 @@ div,section,header,footer,nav,main,article,aside,h1,h2,h3,h4,h5,h6,p,a,ul,li,img
 }
 
 h1{
-  color: rgb(38, 92, 31);
+  color: #e1e9e0;
 }
 
 /* Logo */
@@ -45,7 +45,7 @@ h1{
 .logo {
   font-size: 1.8rem;
   font-weight: bold;
-  color: rgb(38, 92, 31);
+  color: #e1e9e0;
 }
 
 /* Links */
@@ -57,12 +57,13 @@ h1{
 
 /* Links estilo */
 .nav-links li a {
-  color: rgb(38, 92, 31);
+  color: green;
   text-decoration: none;
   transition: color 0.2s;
-  border: 1px solid green;
+  /*border: 1px solid green;*/
   padding:8px 20px;
   border-radius: 50px;
+  background-color: #c8d1b7;
 }
 
 .nav-links li a:hover {

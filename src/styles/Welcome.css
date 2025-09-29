@@ -176,31 +176,52 @@
   display: flex;
   gap: 10px;
   width: 100%;
-  max-width: 1000px;
+  max-width: 1200px;
   justify-content: center;
   align-items: center;
   border: 1px solid darkgray;
+  overflow: hidden;
 }
 
 .Ofrecemos__images--item {
   flex: 1;
   height: 300px;
-  max-width: 100px;
-  background-color: #f0f0f0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.5rem;
-  color: #333;
-  border: 1px solid gainsboro;
-  cursor: pointer;
+  max-width: 150px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   border-radius: 20px;
+  cursor: pointer;
   transition: all 0.8s ease-in-out;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+  color: white;
+  font-size: 1.2rem;
+  border: 1px solid gainsboro;
+  overflow: hidden;
 }
 
+
+/* efecto acordeón */
 .Ofrecemos__images--item.active {
-  background-color: #e0e0e0;
+  flex: 5; /* este crece mucho más */
   max-width: 100%;
-  flex: 4;
+}
+
+/* Los demás se encogen suavemente */
+.container__Ofrecemos--images .Ofrecemos__images--item:not(.active) {
+  flex: 0.5;
+  max-width: 80px;
+}
+
+/* Overlay para texto */
+.Ofrecemos__overlay {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  text-align: center;
+  border-radius: 0 0 20px 20px;
 }
 
