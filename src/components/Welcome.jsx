@@ -1,13 +1,20 @@
 import React from "react";
 import "../styles/Welcome.css";
-import {useState} from "react";
+import { useState } from "react";
 
 export default function Welcome() {
-
   const [activeIndex, setActiveIndex] = useState(null);
   const items = [
-    { id: 1, img: "src/images/hoteles/habitacion-1-web.webp", title: "Hospedaje" },
-    { id: 2, img: "src/images/hoteles/comedor-web.webp", title: "Restaurantes" },
+    {
+      id: 1,
+      img: "src/images/hoteles/habitacion-1-web.webp",
+      title: "Hospedaje",
+    },
+    {
+      id: 2,
+      img: "src/images/hoteles/comedor-web.webp",
+      title: "Restaurantes",
+    },
     { id: 3, img: "src/images/alqulerdeauto2.png", title: "Transportes" },
     { id: 4, img: "src/images/sandb-boarding.jpg", title: "Experiencias" },
     { id: 5, img: "src/images/fondo-rural.jpg", title: "Comunidad" },
@@ -16,7 +23,7 @@ export default function Welcome() {
   return (
     <div className="welcome__container">
       <section className="section__hero">
-        <h1>Welcome to Nicaragua</h1>
+        <h1>Bienvenido a Nicaragua</h1>
         {/*<div className="container__hero">
           <img src="" alt="lugares de Nicaragua" />
         </div>*/}

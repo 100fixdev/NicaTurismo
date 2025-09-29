@@ -36,7 +36,7 @@ button {
   width: 100%;
   height: clamp(
     60px,
-    8vh,
+    9vh,
     80px
   ); /* altura adaptable a diferentes dispositivos ;-) */
   background-color: #448531; /* azul */
@@ -64,9 +64,8 @@ h1 {
 }
 
 .logo {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #e1e9e0;
+  height: 150px;
+  width: auto;
 }
 
 /* Links */
