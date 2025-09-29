@@ -1,20 +1,37 @@
-//import { useState } from 'react'
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
-import Navbar from './components/Navbar'
-import Welcome from './components/Welcome'
-import './App.css'
-import Footer from './components/Footer'
+/* Páginas */
+import Welcome from "./pages/Welcome"; // tu Landing (ya existente)
+import Login from "./pages/Login";
+import Dashboard from "./pages/Dashboard.jsx/index.js";
+import Explore from "./pages/Explore";
+import ServiceDetail from "./pages/ServiceDetail";
+import Cart from "./pages/Cart";
+import MapPage from "./pages/MapPage.jsx";
+import Admin from "./pages/Admin";
 
 function App() {
-  //const [count, setCount] = useState(0)
-
   return (
-    <> 
+    <>
       <Navbar />
-      <Welcome />
+      <main style={{ minHeight: "80vh" }}>
+        <Routes>
+          <Route path="/" element={<Welcome />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/explore" element={<Explore />} />
+          <Route path="/service/:id" element={<ServiceDetail />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/map" element={<MapPage />} />
+          <Route path="/admin" element={<Admin />} />
+        </Routes>
+      </main>
       <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
