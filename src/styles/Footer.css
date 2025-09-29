@@ -1,9 +1,10 @@
 .footer {
-  background-color: #0369a1;
+  background-color: #9fcc2e;
   color: white;
   padding: 1rem 0;
   margin-top: 2rem;
   text-align: center;
+  font-family: "montMed", sans-serif;
 }
 
 .footer-container {
@@ -25,8 +26,16 @@
   color: white;
   text-decoration: none;
   transition: color 0.2s;
+  font-family: "montMed", sans-serif;
 }
 
 .footer-links li a:hover {
   color: #facc15;
+}
+
+@font-face {
+  font-family: "montMed";
+  src: url("/src/assets/Montserrat-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }

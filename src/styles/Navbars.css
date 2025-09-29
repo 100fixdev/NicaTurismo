@@ -1,26 +1,49 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Arial', sans-serif;
+  font-family: "montMed", sans-serif;
   box-sizing: border-box;
 }
 
-
-
-div,section,header,footer,nav,main,article,aside,h1,h2,h3,h4,h5,h6,p,a,ul,li,img,button {
+div,
+section,
+header,
+footer,
+nav,
+main,
+article,
+aside,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul,
+li,
+img,
+button {
   box-sizing: border-box;
 }
 
 /* Navbar base */
 .navbar {
   display: flex;
+
   width: 100%;
-  height: clamp(60px, 8vh, 80px); /* altura adaptable a diferentes dispositivos ;-) */
+  height: clamp(
+    60px,
+    9vh,
+    80px
+  ); /* altura adaptable a diferentes dispositivos ;-) */
   background-color: #448531; /* azul */
   color: #becabc;
   padding: 0.5rem 1rem;
   position: fixed;
+  z-index: 500;
 }
 
 /* Contenedor flex */
@@ -30,22 +53,19 @@ div,section,header,footer,nav,main,article,aside,h1,h2,h3,h4,h5,h6,p,a,ul,li,img
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
 
-h1{
+h1 {
   color: #e1e9e0;
 }
 
 /* Logo */
-.nav-container--logo{
-
+.nav-container--logo {
 }
 
 .logo {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #e1e9e0;
+  height: 150px;
+  width: auto;
 }
 
 /* Links */
@@ -61,7 +81,7 @@ h1{
   text-decoration: none;
   transition: color 0.2s;
   /*border: 1px solid green;*/
-  padding:8px 20px;
+  padding: 8px 20px;
   border-radius: 50px;
   background-color: #c8d1b7;
 }
@@ -95,4 +115,11 @@ h1{
   .nav-toggle {
     display: block;
   }
+}
+
+@font-face {
+  font-family: "montMed";
+  src: url("/src/assets/Montserrat-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
