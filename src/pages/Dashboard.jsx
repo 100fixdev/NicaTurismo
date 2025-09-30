@@ -18,9 +18,9 @@ export default function Dashboard() {
   }, []);
 
   return (
-    <div className="container" style={{ paddingTop: 24 }}>
-      <div className="dashboard" style={{ alignItems: "flex-start" }}>
-        <aside className="sidebar" style={{ minHeight: 720, paddingTop: 28 }}>
+    <div className="container" style={{ paddingTop: 24,  height: "100dvh", width: "100%" }}>
+      <div className="dashboard" style={{ alignItems: "center" }}>
+        <aside className="sidebar" style={{ minHeight: 720, paddingTop: 28, marginTop: 30 }}>
           <div style={{ marginBottom: 28, display: "flex", alignItems: "center", gap: 12 }}>
             <div style={{
               width: 56, height: 56, background: "#231826", color: "#fff",
