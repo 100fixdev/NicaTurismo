@@ -223,7 +223,7 @@ export default function Dashboard() {
                 <div style={{
                   width: 84, height: 84, borderRadius: 48, background: "#fff", margin: "0 auto 12px",
                   display: "flex", alignItems: "center", justifyContent: "center", color: "#1f1520", fontSize: 40
-                }}>🤖</div>
+                }}>IT</div>
                 <div style={{ fontWeight: 800, fontSize: 18 }}>¿No sabe donde viajar?</div>
                 <div style={{ color: "rgba(255,255,255,0.75)", marginTop: 8 }}>Converse con nuestro chat-Bot para obtener recomendaciones</div>
               </div>
