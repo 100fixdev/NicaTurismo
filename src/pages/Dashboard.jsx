@@ -68,7 +68,8 @@ export default function Dashboard() {
                 background: "#241623",
                 color: "#fff",
                 padding: "12px 18px",
-                borderRadius: 12
+                borderRadius: 12,
+                cursor: "pointer"
               }}
             >
               Buscar Nuevos Viajes
