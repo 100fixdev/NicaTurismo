@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container__login{
+    width: 100%;
+    
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: url('src/images/fondo-verde-de-login.png') no-repeat center;
+    border: 1px solid black;
+    background-size:cover;
+}
+
+.container__login--image{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+}
+
+.container__login--image img{
+    width: 100%;
+    height: 100%;    
+    object-fit: cover;
+}
+
+.container__login--form{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container__login--form h2{
+    font-size: 3.5rem;
+    color: #e6d8d8;
+    font-weight: 700;
+}
+
+.login--form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.login--form label{
+    color: #e6d8d8;
+    font-size: 1.2rem;
+    font-weight: 600;
+    align-items: flex-start;
+}
+
+.login--form .input{
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: rgba(240, 248, 255, 0.089);
+    border:none;
+    color: #e6d8d8;
+}
+
+.container__login--form .btn{
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: rgb(149, 196, 41);
+    color: #302d2d;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+
+}

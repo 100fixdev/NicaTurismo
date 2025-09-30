@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import "../styles/login.css";
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -14,13 +15,38 @@ export default function Login() {
   }
 
   return (
-    <div className="container" style={{ paddingTop: 32 }}>
-      <h2>Iniciar Sesión</h2>
-      <form className="form" style={{ maxWidth: 420 }} onSubmit={handleSubmit}>
-        <input className="input" placeholder="Correo" value={email} onChange={e => setEmail(e.target.value)} />
-        <input className="input" type="password" placeholder="Contraseña" value={pw} onChange={e => setPw(e.target.value)} />
-        <button className="btn" type="submit">Entrar</button>
-      </form>
+    <div className="container__login">
+      <div className="container__login--image">
+
+        <img src="src/images/mujer-grande-camara.png" alt="" />
+      </div>
+      <div className="container__login--form">
+        <h2>Iniciar Sesión</h2>
+
+        <form
+          className="login--form"
+          style={{ maxWidth: 420 }}
+          onSubmit={handleSubmit}
+        > <label htmlFor="email">Correo</label>
+          <input
+            className="input"
+            placeholder="ejemplo@correo.com"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <label htmlFor="password">Contraseña</label>
+          <input
+            className="input"
+            type="password"
+            placeholder="azx123"
+            value={pw}
+            onChange={(e) => setPw(e.target.value)}
+          />
+          <button className="btn" type="submit">
+            Iniciar
+          </button>
+        </form>
+      </div>
     </div>
   );
 }
