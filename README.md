@@ -1,5 +1,5 @@
 
-# Nicas Tours — Frontend (React + Vite)
+# Nicas Tour — Frontend (React + Vite)
 
 ![NicaTurismo - Logo](src/images/logos/Logo%20nicas%20tour_Mesa%20de%20trabajo%201.png)
 
